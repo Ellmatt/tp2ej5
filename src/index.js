@@ -3,7 +3,7 @@ import morgan from "morgan"
 import cors from "cors"
 import path from "path"
 import "./database"
-import router from './routes/colores.routes'
+import router from './routes/recetas.routes'
 
 const app = express()
 
@@ -24,4 +24,4 @@ app.use(express.urlencoded({extended:true}))
 
 app.use(express.static(path.join(__dirname,'../public')))
 
-app.use('/apiReseta', router)
+app.use('/apiReceta', router)
