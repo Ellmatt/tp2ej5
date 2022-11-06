@@ -9,11 +9,11 @@ import { borrarReceta
 
 const router=Router()
 
-router.route('/colores')
+router.route('/recetas')
 .get(listarReceta)
 .post(crearReceta)
 
-router.route('/colores/:id')
+router.route('/recetas/:id')
 .get(obtenerReceta)
 .put(editarReceta)
 .delete(borrarReceta)
